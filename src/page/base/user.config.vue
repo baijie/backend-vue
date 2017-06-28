@@ -20,7 +20,6 @@ import cTable from '@/components/data/Table';
 import uForm from './user.config.form';
 
 export default {
-  name: 'userConfig',
   data() {
     return {
       addForm: {
@@ -35,6 +34,7 @@ export default {
       numberValidateForm: {
         age: '',
       },
+      message: 'hello',
     };
   },
   methods: {
@@ -50,6 +50,9 @@ export default {
     cAdd,
     cEdit,
     uForm,
+  },
+  created() {
+    this.numberValidateForm = 1;
   },
 };
 </script>
